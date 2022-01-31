@@ -26,3 +26,5 @@ post-finish
 - favicon w/o index.html subpage
 - bug squash
 - optimize :p
+
+- link to github? maybe w github logo
