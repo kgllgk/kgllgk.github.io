@@ -18,6 +18,8 @@
 
 * about
   * do i even need? not sure what to do yet
+  *  link to github? maybe w github logo
+  * add ss's of the process
 
 post-finish
 
@@ -26,5 +28,3 @@ post-finish
 - favicon w/o index.html subpage
 - bug squash
 - optimize :p
-
-- link to github? maybe w github logo
