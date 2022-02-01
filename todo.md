@@ -1,6 +1,6 @@
 * index
-  * css
-  * radio
+  * css (understood)
+  * radio (50 % done)
 
 * pictures
   * add pictures and descriptions for each photo in each album
