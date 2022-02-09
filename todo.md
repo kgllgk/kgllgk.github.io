@@ -17,8 +17,8 @@
   * make playlists (4 minimum)
 
 * about
-  * do i even need? not sure what to do yet
-  *  link to github? maybe w github logo
+  * ~~do i even need? not sure what to do yet~~
+  *  ~~link to github? maybe w github logo~~
   * add ss's of the process
     * ^ not needed since github links active?
 
