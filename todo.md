@@ -27,5 +27,6 @@ post-finish
 - ~~device check~~
 - ~~browser check~~
 - ~~favicon w/o index.html subpage~~
+- fix desktop optimization (center)
 - bug squash
 - optimize :p
