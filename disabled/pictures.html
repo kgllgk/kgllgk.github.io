@@ -24,31 +24,14 @@
 	<meta name="msapplication-TileImage" content="images/favicon-144.png">
 	<meta name="msapplication-config" content="images/browserconfig.xml">
 	<!-- ****** favicons ****** -->
-  <style>
-    .pads {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    .padstwo {
-      margin: 40px;
-      max-width: 300px;margin:40px;
-      width: 90%;
-      height: auto;
-    }
-    img {
-    max-width: 90%;
-    height: auto;
-    width: auto\9; /* ie8 */
-    margin: 20px;
-    border-radius: 20px;
-
-}
-.center {
-  text-align: center;
-}
-  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  .pads {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/cyborg/bootstrap.min.css" integrity="sha256-fO58jx4RDvdVgLJ4VWCNdWLLQF5cXb34EtdoGxlcJ68=" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
@@ -94,95 +77,18 @@
 
 <div class="alert alert-dismissible alert-info">
   <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-  <strong>i still need to take more selfies for you
+  <strong>Hey!</strong> This page is <u> password protected</u> until 2.14.2022
 </div>
 
 <!-- tabs for diff photo galleries i wanna share -->
 
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" data-bs-toggle="tab" href="#album1">You</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#album2">Us</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="tab" href="#album3">Me</a>
-  </li>
-</ul>
+  <div class="form-group pads">
+    <label class="form-label mt-4">Enter Password</label>
 
-<div id="myTabContent" class="tab-content">
-  <div class="tab-pane fade active show" id="album1">
-    <h3 class="pads"><br>album 1 </h3>
-    <h4 class="pads
-  ">pictures i love of you</h4>
-  <p class="pads"> 
-    it’s so hard to pick my favorites, but these are some where u shine in every pic. also theres a funny vid in here i wanted to remind u of lol. <br>
-    </p>
-   <!-- <div class="padstwo"> -->
-<img src="/images/her/1.jpeg" ><p></p><br>
-<img src="/images/her/2.jpeg" ><p></p><br>
-<img src="/images/her/3.jpeg" ><p></p><br>
-<img src="/images/her/4.jpeg" ><p></p><br>
-<video  max-width="300px" width="90%" height="auto" controls>
-    <source src="/images/her/5.MP4" type="video/mp4">
-    Your browser does not support the video tag.
-</video><p></p><br>
-<img src="/images/her/6.jpeg" ><p></p><br>
-<img src="/images/her/7.jpeg" ><p></p><br>
-<img src="/images/her/8.jpeg" ><p></p><br>
-<img src="/images/her/9.jpeg" ><p></p><br>
-
-</div>
-
-  <div class="tab-pane fade" id="album2">
-
-    <h3 class="pads"><br>album 2 </h3>
-    <h4 class="pads">pictures i love of us</h4>
-  <p class="pads"> 
-   all the memories we share together have such a big part of my heart with them <br>
-    </p>
-<img src="/images/us/1.jpeg" ><p></p><br>
-<img src="/images/us/2.jpeg" ><p></p><br>
-<img src="/images/us/3.png" ><p></p><br>
-<img src="/images/us/4.jpeg" ><p></p><br>
-<img src="/images/us/5.jpeg" ><p></p><br> 
-<img src="/images/us/6.jpeg" ><p></p><br>
-<img src="/images/us/7.jpeg" ><p></p><br>
-<img src="/images/us/8.jpeg" ><p></p><br>
-<img src="/images/us/9.jpeg" ><p></p><br>
-
-
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
   </div>
-  <div class="tab-pane fade" id="album3">
-    <h3 class="pads"><br>album 3 </h3>
-    <h4 class="pads">pictures of me</h4>
-  <p class="pads">ummm, okay <br>
-    so basically, this was supposed to have way more pictures of me<br>
-    sadly i got caught up with homework, so i have to add a couple filler pics, of coco<br>
-    im sorry i got busy! pero at least there is some pics;<br>
-    <small class="text-muted">and a coupon</small>
-    </p>
-<img src="/images/me/1.JPG" ><p></p><br>
-<img src="/images/me/2.JPG" ><p></p><br>
-<img src="/images/me/3.JPG" ><p></p><br>
-<img src="/images/me/4.JPG" ><p></p><br>
-<img src="/images/me/5.JPG" ><p></p><br> 
-<img src="/images/me/6.JPG" ><p></p><br>
-<img src="/images/me/7.JPG" ><p></p><br>
-<img src="/images/me/8.JPG" ><p></p><br>
-<img src="/images/me/9.JPG" ><p></p><br>
-<video  max-width="300px" width="90%" height="auto" controls>
-  <source src="/images/me/10.mov" type="video/mov">
-  Your browser does not support the video tag.
-</video><p></p><br>
-<img src="/images/me/11.JPG" ><p></p><br>
-<img src="/images/me/12.png" ><p></p><br>
-
-  </div>
-</div>
-
-
-
 </body>
 </html>
