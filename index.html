@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy Valentine's Day!</title>
+  <!-- ******  favicons ****** -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="images/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="images/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+	<link rel="apple-touch-icon" href="images/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="images/favicon-144.png">
+	<meta name="msapplication-config" content="images/browserconfig.xml">
+	<!-- ****** favicons ****** -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+  .pads {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .img-hor {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+  </style>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- dark mode nav -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://kgl22.com">Happy Valentine's Day! <3</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="https://kgl22.com">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pictures">Pictures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="letters">Letters</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Playlists</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="playlists-am">Apple Music</a>
+              <a class="dropdown-item" href="playlists-spotify">Spotify</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div findex style="text-align:center;">
+<h3>
+<br>  <img src="images/heart.gif" alt="heart gif" width="120" height="120" > 
+hi
+  <small class="text-muted">mi amor</small>
+<img src="images/heart.gif" alt="heart gif" width="120" height="120" class="img-hor"> </h3>
+</div>
+<p style="text-align:center">love u a thousand times over,, heres the website it's done bae</p>
+<p style="text-align:center"><small>i love you so muchhhh ayyy made a website ayyy yuhhh ayyyy .</small></p>
+
+<p style="text-align:center">dont forget to check out all of the pages</p>
+<p style="text-align:center"><small>lmk what you like the most pls pls mwah mwah </small></p>
+<br>
+<p style="text-align:center">website inspired by </small></p>
+
+<p align="center"><iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="1250" style="border-radius: 50px;width:90%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://elijahbday.carrd.co/"></iframe></p>
+</p>
+</body>
+</html>
