@@ -35,6 +35,6 @@ anni
 - add lyric?audio? 2letters?
 - update new about section
 - add some text to home page
-- consider using source iframe on playlists page
-  - if not, disable links to original website on the iframe of vday playlists. point href to # on playlists-xx.html navbars
-- disable href on all vday links (navbar) or redirect to new links
+- ~~consider using source iframe on playlists page~~
+  - ~~if not, disable links to original website on the iframe of vday playlists. point href to # on playlists-xx.html navbars~~
+- ~~disable href on all vday links (navbar) or redirect to new links~~
