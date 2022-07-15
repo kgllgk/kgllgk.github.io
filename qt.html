@@ -43,7 +43,7 @@ async def foo():
     hours = delta.seconds / 3600
     minutes = ((delta.seconds / 3600) % 1) * 60
     seconds = (minutes % 1) * 60
-    y = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+    y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
     output = y
     Element("outputDiv2").write(output)
 
