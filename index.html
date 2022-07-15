@@ -14,11 +14,11 @@
 
   <body>
     Hello world! <br>
-    This is the current date and time, as computed by Python: test1
+    This is the current date and time, as computed by Python: test2
     <py-script>
 import datetime
 anni = datetime.date(2022,7,20)
-now = datetime.now()
+now = datetime.datetime.now()
 now.strftime("%m/%d/%Y, %H:%M:%S")
     </py-script>
   </body>
