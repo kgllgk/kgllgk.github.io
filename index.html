@@ -26,7 +26,10 @@ anni = datetime.date(2022,7,20)
 now = datetime.date.today()
 print(anni-now)
 delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
-print(str(delta.days) + " days, " + str(delta.seconds/3600)  + " hours, " + str((delta.seconds/6000)-1200)  + " minutes, and " + str(delta.seconds)  + " seconds.")
+hours = delta.seconds / 3600
+minutes = ((delta.seconds / 3600) % 1) * 60
+seconds = (minutes % 1) * 60
+print(f"{str(delta.days)} days, {str(hours)} hours, {str(minutes)} minutes, and {str(seconds)} seconds.")
 
     </py-script>
   </body>
