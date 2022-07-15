@@ -38,3 +38,6 @@ anni
 - ~~consider using source iframe on playlists page~~
   - ~~if not, disable links to original website on the iframe of vday playlists. point href to # on playlists-xx.html navbars~~
 - ~~disable href on all vday links (navbar) or redirect to new links~~
+- add new header gifs to *about* page and *playlists* page
+
+- add some text to home page
