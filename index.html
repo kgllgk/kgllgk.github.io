@@ -14,12 +14,14 @@
 
   <body>
     Hello world! <br>
-    This is the current date and time, as computed by Python: test2.5
+    This is the current date and time, as computed by Python: test2.75
     <py-script>
 import datetime
 anni = datetime.date(2022,7,20)
 now = datetime.date.today()
 print(anni-now)
+delta = datetime.datetime(2011, 5, 5) - datetime.datetime.now()
+print(delta.days)
     </py-script>
   </body>
 </html>
