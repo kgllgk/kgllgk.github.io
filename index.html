@@ -19,14 +19,16 @@
 <div>
   <body>
     under construction <br>
-    test4.2
+    test4.5
     <py-script>
 import datetime
+import math
+
 delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
 hours = delta.seconds / 3600
 minutes = ((delta.seconds / 3600) % 1) * 60
 seconds = (minutes % 1) * 60
-print(f"{str(delta.days)} days, {str(hours)} hours, {str(minutes)} minutes, and {str(seconds)} seconds.")
+print(f"{str(delta.days)} days, {str(math.floor(hours))} hours, {str(math.floor(minutes))} minutes, and {str(math.floor(seconds))} seconds.")
 
     </py-script>
   </body>
