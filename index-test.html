@@ -30,6 +30,14 @@ utils.now()
     <py-script>
 from utils import now
 import asyncio
+import datetime
+import math
+
+delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
+hours = delta.seconds / 3600
+minutes = ((delta.seconds / 3600) % 1) * 60
+seconds = (minutes % 1) * 60
+print(f"{str(delta.days)} days, {str(math.floor(hours))} hours, {str(math.floor(minutes))} minutes, and {str(math.floor(seconds))} seconds.")
 
 async def foo():
   while True:
