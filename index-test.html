@@ -10,23 +10,8 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <py-env>
-    - paths:
-      - ./utils.py
-    </py-env>
   </head>
-
   <body>
-    <div class="font-mono">start time: <label id="outputDiv"></label></div>
-    <div id="outputDiv2" class="font-mono"></div>
-    <div id="outputDiv3" class="font-mono"></div>
-    <py-script output="outputDiv">
-# demonstrates how use the global PyScript pyscript_loader
-# to send operation log messages to it
-import utils
-utils.now()
-    </py-script>
-
     <py-script>
 import datetime
 import math
@@ -40,27 +25,9 @@ while True:
         minutes = ((delta.seconds / 3600) % 1) * 60
         seconds = (minutes % 1) * 60
         output = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
-        Element("outputDiv2").write(output)
+        print(output)
         time.sleep(1)
 
-
-
-      
-      
-# async def foo():
-#  while True:
-#    await asyncio.sleep(1)
-#    output = y
-#    Element("outputDiv2").write(output)
-
-#  while True:
-#    await asyncio.sleep(1)
-#    output = x
-#    Element("outputDiv3").write(output)
-
-# close the global PyScript pyscript_loader
-pyscript_loader.close()
-# pyscript.run_until_complete(foo())
-    </py-script>
+      </py-script>
   </body>
 </html>
