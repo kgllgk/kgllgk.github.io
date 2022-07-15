@@ -28,7 +28,7 @@ utils.now()
     </py-script>
 
     <py-script>
-from utils import countdown
+from utils import test
 import asyncio
 import datetime
 import math
@@ -38,13 +38,13 @@ hours = delta.seconds / 3600
 minutes = ((delta.seconds / 3600) % 1) * 60
 seconds = (minutes % 1) * 60
 x = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(math.floor(seconds)))
-print(f"Test 4.1 {x}")
+print(f"Test 4.2 {x}")
 print(f"{str(delta.days)} days, {str(math.floor(hours))} hours, {str(math.floor(minutes))} minutes, and {str(math.floor(seconds))} seconds.")
 
 async def foo():
   while True:
     await asyncio.sleep(1)
-    output = countdown(x)
+    output = test(x)
     Element("outputDiv2").write(output)
 
     out3 = Element("outputDiv3")
