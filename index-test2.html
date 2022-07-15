@@ -31,27 +31,22 @@ utils.now()
 import datetime
 import math
 import time
+import asyncio
 
 # infinite loop for printing countdown
-while True:
-    for i in iter(int, 1):
-        delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
-        hours = delta.seconds / 3600
-        minutes = ((delta.seconds / 3600) % 1) * 60
-        seconds = (minutes % 1) * 60
-        output = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
-        Element("outputDiv2").write(output)
-        time.sleep(1)
 
-
-
-      
-      
-# async def foo():
-#  while True:
-#    await asyncio.sleep(1)
-#    output = y
-#    Element("outputDiv2").write(output)
+    
+async def foo():
+    while True:
+        for i in iter(int, 1):
+            delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
+            hours = delta.seconds / 3600
+            minutes = ((delta.seconds / 3600) % 1) * 60
+            seconds = (minutes % 1) * 60
+            output = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+            Element("outputDiv2").write(output)
+            time.sleep(1)
+#    
 
 #  while True:
 #    await asyncio.sleep(1)
@@ -60,7 +55,7 @@ while True:
 
 # close the global PyScript pyscript_loader
 pyscript_loader.close()
-# pyscript.run_until_complete(foo())
+pyscript.run_until_complete(foo())
     </py-script>
   </body>
 </html>
