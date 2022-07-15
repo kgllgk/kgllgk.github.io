@@ -44,7 +44,7 @@ print(f"{str(delta.days)} days, {str(math.floor(hours))} hours, {str(math.floor(
 async def foo():
   while True:
     await asyncio.sleep(1)
-    output = x
+    output = countdown(x)
     Element("outputDiv2").write(output)
 
     out3 = Element("outputDiv3")
