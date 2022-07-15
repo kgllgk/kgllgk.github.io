@@ -28,17 +28,22 @@ utils.now()
     </py-script>
 
     <py-script>
-from utils import now
-import asyncio
 import datetime
 import math
+import time
 
-delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
-hours = delta.seconds / 3600
-minutes = ((delta.seconds / 3600) % 1) * 60
-seconds = (minutes % 1) * 60
-x = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(math.floor(seconds)))
-print(f"Test 4.5 {x}")
+# infinite loop for printing countdown
+while True:
+    for i in iter(int, 1):
+        delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
+        hours = delta.seconds / 3600
+        minutes = ((delta.seconds / 3600) % 1) * 60
+        seconds = (minutes % 1) * 60
+        y = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+        output = y
+        Element("outputDiv2").write(output)
+        time.sleep(1)
+
 
 
       
@@ -46,7 +51,7 @@ print(f"Test 4.5 {x}")
 # async def foo():
 #  while True:
 #    await asyncio.sleep(1)
-#    output = x
+#    output = y
 #    Element("outputDiv2").write(output)
 
 #  while True:
