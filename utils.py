@@ -8,6 +8,8 @@ def format_date(dt_, fmt="%m/%d/%Y, %H:%M:%S"):
 def now(fmt="%m/%d/%Y, %H:%M:%S"):
     return format_date(dt.now(), fmt)
 
+def test(countdown)
+    return countdown
 
 def remove_class(element, class_name):
     element.element.classList.remove(class_name)
