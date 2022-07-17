@@ -50,12 +50,12 @@ async def foo():
     else:
         daystxt4 = " days, "
     hours4 = delta4.seconds / 3600
-    if hours4 == 1:
+    if math.floor(hours4) == 1:
         hourstxt4 = " hour, "
     else:
         hourstxt4 = " hours, "
     minutes4 = ((delta4.seconds / 3600) % 1) * 60
-    if minutes4 == 1:
+    if math.floor(minutes4) == 1:
         minutestxt4 = " minute, and "
     else:
         minutestxt4 = " minutes, and "
@@ -75,12 +75,12 @@ async def foo():
     else:
         daystxt5 = " days, "
     hours5 = delta5.seconds / 3600
-    if hours5 == 1:
+    if math.floor(hours5) == 1:
         hourstxt5 = " hour, "
     else:
         hourstxt5 = " hours, "
     minutes5 = ((delta5.seconds / 3600) % 1) * 60
-    if minutes5 == 1:
+    if math.floor(minutes5) == 1:
         minutestxt5 = " minute, and "
     else:
         minutestxt5 = " minutes, and "
