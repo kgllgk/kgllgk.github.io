@@ -50,7 +50,7 @@ async def foo():
     output = x
     Element("outputDiv").write(output)
 
-    await asyncio.sleep(1)
+#    await asyncio.sleep(1)
     delta5 = datetime.datetime(2024, 7, 20) - datetime.datetime.now()
     hours5 = delta5.seconds / 3600
     minutes5 = ((delta5.seconds / 3600) % 1) * 60
