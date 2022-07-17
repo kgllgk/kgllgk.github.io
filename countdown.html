@@ -42,20 +42,20 @@ import time
 async def foo():
   while True:
     await asyncio.sleep(1)
-    delta = datetime.datetime(2023, 7, 20) - datetime.datetime.now()
-    hours = delta.seconds / 3600
-    minutes = ((delta.seconds / 3600) % 1) * 60
-    seconds = (minutes % 1) * 60
-    x = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+    delta4 = datetime.datetime(2023, 7, 20) - datetime.datetime.now()
+    hours4 = delta4.seconds / 3600
+    minutes4 = ((delta4.seconds / 3600) % 1) * 60
+    seconds4 = (minutes4 % 1) * 60
+    x = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta4.days), str(math.floor(hours4)), str(math.floor(minutes4)), str(round(seconds4)))
     output = x
     Element("outputDiv").write(output)
 
     await asyncio.sleep(1)
-    delta = datetime.datetime(2024, 7, 20) - datetime.datetime.now()
-    hours = delta.seconds / 3600
-    minutes = ((delta.seconds / 3600) % 1) * 60
-    seconds = (minutes % 1) * 60
-    y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+    delta5 = datetime.datetime(2024, 7, 20) - datetime.datetime.now()
+    hours5 = delta5.seconds / 3600
+    minutes5 = ((delta5.seconds / 3600) % 1) * 60
+    seconds5 = (minutes5 % 1) * 60
+    y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta5.days), str(math.floor(hours5)), str(math.floor(minutes5)), str(round(seconds5)))
     output = y
     Element("outputDiv2").write(output)
 
