@@ -41,22 +41,56 @@ import time
 
 async def foo():
   while True:
+
+  # countdown to 4-yr anni
     await asyncio.sleep(1)
     delta4 = datetime.datetime(2023, 7, 20) - datetime.datetime.now()
+    if delta4.days == 1:
+        daystxt4 = " day, "
+    else:
+        daystxt4 = " days, "
     hours4 = delta4.seconds / 3600
+    if hours4 == 1:
+        hourstxt4 = " hour, "
+    else:
+        hourstxt4 = " hours, "
     minutes4 = ((delta4.seconds / 3600) % 1) * 60
+    if minutes4 == 1:
+        minutestxt4 = " minute, and "
+    else:
+        minutestxt4 = " minutes, and "
     seconds4 = (minutes4 % 1) * 60
-    x = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta4.days), str(math.floor(hours4)), str(math.floor(minutes4)), str(round(seconds4)))
+    if round(seconds4) == 1:
+        secondstxt4 = " second."
+    else:
+        secondstxt4 = " seconds."
+    x = str(delta4.days) + daystxt4 + str(math.floor(hours4)) + hourstxt4 + str(math.floor(minutes4)) + minutestxt4 + str(round(seconds4)) + secondstxt4
     output = x
     Element("outputDiv").write(output)
 
-#    await asyncio.sleep(1)
+    # countdown til 5-yr anni
     delta5 = datetime.datetime(2024, 7, 20) - datetime.datetime.now()
+    if delta5.days == 1:
+        daystxt5 = " day, "
+    else:
+        daystxt5 = " days, "
     hours5 = delta5.seconds / 3600
+    if hours5 == 1:
+        hourstxt5 = " hour, "
+    else:
+        hourstxt5 = " hours, "
     minutes5 = ((delta5.seconds / 3600) % 1) * 60
+    if minutes5 == 1:
+        minutestxt5 = " minute, and "
+    else:
+        minutestxt5 = " minutes, and "
     seconds5 = (minutes5 % 1) * 60
-    y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta5.days), str(math.floor(hours5)), str(math.floor(minutes5)), str(round(seconds5)))
-    output = y
+    if round(seconds5) == 1:
+        secondstxt5 = " second."
+    else:
+        secondstxt5 = " seconds."
+    x = str(delta5.days) + daystxt5 + str(math.floor(hours5)) + hourstxt5 + str(math.floor(minutes5)) + minutestxt5 + str(round(seconds5)) + secondstxt5
+    output = x
     Element("outputDiv2").write(output)
 
 # close the global PyScript pyscript_loader
