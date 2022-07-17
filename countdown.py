@@ -8,11 +8,27 @@ import time
 while True:
     for i in iter(int, 1):
         delta = datetime.datetime(2022, 7, 20) - datetime.datetime.now()
+        if delta.days == 1:
+            daystxt = " day, "
+        else:
+            daystxt = " days, "
         hours = delta.seconds / 3600
+        if hours == 1:
+            hourstxt = " hour, "
+        else:
+            hourstxt = " hours, "
         minutes = ((delta.seconds / 3600) % 1) * 60
+        if minutes == 1:
+            minutestxt = " minute, and "
+        else:
+            minutestxt = " minutes, and "
         seconds = (minutes % 1) * 60
-        y = "%s days, %s hours, %s minutes, and %s seconds."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
-        print(f"y = {y}")
+        if round(seconds) == 1:
+            secondstxt = " second."
+        else:
+            secondstxt = " seconds."
+        x = str(delta.days) + daystxt + str(math.floor(hours)) + hourstxt + str(math.floor(minutes)) + minutestxt + str(round(seconds)) + secondstxt
+        print(f"x = {x}")
         time.sleep(1)
 
 # debugging area
