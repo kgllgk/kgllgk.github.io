@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>kgl22.com</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+      
+      div {
+        padding: 60px;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    <py-env>
+    - paths:
+      - ./utils.py
+    </py-env>
+  </head>
+
+  <body>
+    <div class="center">four years</div><br><br>
+    <div id="outputDiv" class="center"></div><br><br>
+    <div class="center">five years</div><br><br>
+    <div id="outputDiv2" class="center"></div><br><br>
+
+
+    <py-script>
+from utils import now
+import asyncio
+import datetime
+import math
+import time
+
+async def foo():
+  while True:
+    await asyncio.sleep(1)
+    delta = datetime.datetime(2023, 7, 20) - datetime.datetime.now()
+    hours = delta.seconds / 3600
+    minutes = ((delta.seconds / 3600) % 1) * 60
+    seconds = (minutes % 1) * 60
+    x = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+    output = x
+    Element("outputDiv").write(output)
+
+    await asyncio.sleep(1)
+    delta = datetime.datetime(2024, 7, 20) - datetime.datetime.now()
+    hours = delta.seconds / 3600
+    minutes = ((delta.seconds / 3600) % 1) * 60
+    seconds = (minutes % 1) * 60
+    y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
+    output = y
+    Element("outputDiv").write(output)
+
+# close the global PyScript pyscript_loader
+pyscript_loader.close()
+pyscript.run_until_complete(foo())
+    </py-script>
+  </body>
+</html>
