@@ -57,7 +57,7 @@ async def foo():
     seconds = (minutes % 1) * 60
     y = "%s day(s), %s hour(s), %s minute(s), and %s second(s)."%(str(delta.days), str(math.floor(hours)), str(math.floor(minutes)), str(round(seconds)))
     output = y
-    Element("outputDiv").write(output)
+    Element("outputDiv2").write(output)
 
 # close the global PyScript pyscript_loader
 pyscript_loader.close()
