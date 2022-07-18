@@ -34,7 +34,7 @@ post-finish
 anni
 - ~~add lyric?audio? 2letters?~~
 - ~~update new about section~~
--  finalize about section "letters"
+- ~~finalize about section "letters"~~
 - add some text to home page
 - ~~consider using source iframe on playlists page~~
   - ~~if not, disable links to original website on the iframe of vday playlists. point href to # on playlists-xx.html navbars~~
