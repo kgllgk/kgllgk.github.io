@@ -40,5 +40,5 @@ anni
   - ~~if not, disable links to original website on the iframe of vday playlists. point href to # on playlists-xx.html navbars~~
 - ~~disable href on all vday links (navbar) or redirect to new links~~
 - ~~add new header gifs to *about* page and *playlists* page~~
-- rename about and letters page when completed
+- ~~rename about and letters page when completed~~
 - ~~optimize longevity by downloading gifs and storing them locally?~~
