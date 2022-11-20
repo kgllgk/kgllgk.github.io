@@ -1,170 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>happy anniversary!</title>
-<meta property="og:title" content="happy anniversary!" />
-<meta property="og:image" content="https://kgl22.com/images/linkpreview.jpg" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-.padsy {
- padding : 30px;
+    <title>home | site.com</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="build/scssstyl.css">
+
+    <script>
+        const card = document.querySelector(".card");
+        const mainLink = card.querySelector(".main-link");
+        const clickableElements = Array.from(card.querySelectorAll("a")); //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
+
+        clickableElements.forEach((ele) =>
+            ele.addEventListener("click", (e) => e.stopPropagation())
+        );
+
+        function handleClick(event) {
+            const noTextSelected = !window.getSelection().toString();
+
+            if (noTextSelected) {
+                mainLink.click();
+            }
+        }
+
+        card.addEventListener("click", handleClick);
+    </script>
+    <style>
+.css-selector {
+    background: linear-gradient(229deg, #314428, #264955);
+    background-size: 400% 400%;
+    -webkit-animation: anim 0s ease infinite;
+    -moz-animation: anim 0s ease infinite;
+    -o-animation: anim 0s ease infinite;
+    animation: anim 0s ease infinite;
 }
-
-</style>
-</head>
-<body class="w3-content" style="max-width:1200px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
-  <div class="w3-container w3-display-container w3-padding-16">
-    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-    <h3 class="w3-wide"><b>three years of love</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="https://kgl22.com" class="w3-bar-item w3-button w3-block w3-white"><i class="fa fa-caret-right w3-margin-right"></i>home</a>
-    
-   
-    <a href="/letters" class="w3-bar-item w3-button">letters</a>
-    <a href="/playlists" class="w3-bar-item w3-button">playlists</a>
-    <a href="/about" class="w3-bar-item w3-button">about</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-left-align" id="myBtn">
-      valentine's archive <i class="fa fa-caret-down"></i>
-    </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="/valentines22/home" class="w3-bar-item w3-button">home</a>
-      <a href="/valentines22/letters" class="w3-bar-item w3-button">letters</a>
-      <a href="/valentines22/pictures" class="w3-bar-item w3-button">pictures</a>
-      <a href="/valentines22/about" class="w3-bar-item w3-button">about</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">(3) years of love</div>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
-  <header class="w3-container w3-xlarge">
-    <p class="w3-left">home</p>
-    <p class="w3-right">
-      <i class="fa w3-margin-right"></i>
-      ❤️
-    </p>
-  </header>
-
-  <!-- Image header -->
-  <div class="w3-display-container w3-container">
-    <img src="/images/anni22/heart-love.gif" alt="three years of love" style="width:100%">
-    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
-      <h1 class="w3-jumbo w3-hide-small">love you</h1>
-      <h1 class="w3-hide-large w3-hide-medium">love you</h1>
-      <h1 class="w3-hide-small">july 20 22</h1>
-      <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">scroll down :P</a></p>
-    </div>
-  </div>
-
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>2^3 hearts</p>
-  </div>
-
-  <!-- Product grid -->
-  <div class="w3-row w3-grayscale">
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="https://c.tenor.com/XEjqMqM_7YwAAAAC/anime-hearts.gif" style="width:100%"><br><br><br><br><br><br>
-      </div>
-      <div class="w3-container">
-        <img src="https://c.tenor.com/XQ1v67fazXQAAAAd/dahliabunni-anime.gif" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <br><br><br><img src="https://i.pinimg.com/originals/42/cb/13/42cb1310b2b6303097d99853bbdd0493.gif" style="width:100%"><br><br><br><br><br><br><br>
-      </div>
-      <div class="w3-container">
-        <img src="http://24.media.tumblr.com/dea4065242c247ba96727d5f507be0d7/tumblr_mr0z6gvEdh1s65dm8o1_500.gif" style="width:100%">
-      </div>
-    </div>
-    
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="https://64.media.tumblr.com/4ffd15cf5714c5578b54d1f59431721e/62e888a18eddc718-25/s540x810/12fa954a742c397f405da643583fd75f57bad7f5.gifv" style="width:100%"><br><br><br><br>
-      </div>
-      <div class="w3-container">
-        <img src="https://64.media.tumblr.com/edf8464b23a149ec8e6a1a5816e56a2e/d980b38702e2e6f1-cc/s640x960/46c381d33a49c4a09dbae3e4f67cc5df11c1e503.gif" style="width:100%">
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <br><img src="https://bestanimations.com/media/many-hearts/1881351013electro-game-hearts-gif.gif" style="width:100%"><br><br><br><br><br>
-      </div>
-      <div class="w3-container">
-        <img src="https://64.media.tumblr.com/7ba0c4fde1f2f087f3e892f89cde8804/142bdc7231236abe-65/s500x750/5530d3c464b1729d1d01c738a4ebee3d90fb232b.gifv" style="width:100%">
-      </div>
-    </div>
-  </div>
-  <div class="padsy">
-    <h1> home</h1>
-    <p> I love you so much, happy three years.</p>
-    <p> I wasn’t planning on making a website for anni. at first, kgl22 was just gonna be for vday, pero I got inspired by all the downtime I had and wanted to give you extra love this year around</p>
-    <p> I hope you like your gifts ❤️</p>
-  </div>
+@-webkit-keyframes anim {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@-moz-keyframes anim {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@-o-keyframes anim {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+@keyframes anim {
+    0%{background-position:0% 86%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 86%}
+}
+/* used https://www.gradient-animator.com/ to generate the gradient animation */
+    </style>
     
 
-
-  <br>
-  <br>
-  <br>
-  <!-- End page content -->
-</div>
-
-<script>
-// Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+  </head>
+<body class="css-selector" style="display:flex; align-items:center; justify-content:center">
+    <article class="card">
+        <div>
+            <p class="sub-heading">
+                Letter
+                <time datetime="2022-11-21">
+                    Nov 21, 2022 </time>
+            </p>
+            <h2><a href="password" class="main-link" target="_blank">Your Letter</a></h2>
+            <p>
+                Below is the link to access the crossword. 
+                The password key is 4.5, 2.4, 7.1, 2.3, 8.1, 4.4, 3.8, 4.4, 7.1
+                <br><br> 
+                {format: word.letterIndex}
+            </p>
+        </div>
+        <div class="tags">
+            <a class="tag" href="crossword.png" target="_blank">Crossword</a>
+        </div>
+    </article>      
+    <article class="card">
+        <div>
+            <p class="sub-heading">
+                Archives
+                <time datetime="2022-11-21">
+                    Updated Nov 21, 2022 </time>
+            </p>
+            <h2><a href="password" class="main-link" target="_blank">Past Links</a></h2>
+            <p>
+                Click here to access the '3 years' page, 
+                or find other archives using the links below
+            </p>
+        </div>
+        <div class="tags">
+            <a class="tag" href="3years/home.html" target="_blank">3 years</a>
+            <a class="tag" href="valentines22/home.html" target="_blank">V-day '22</a>
+        </div>
+    </article>      
 
 </body>
 </html>
