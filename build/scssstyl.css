@@ -67,7 +67,7 @@ time {
 .tags .tag {
   padding: 5px 10px;
   border: solid 1px grey;
-  border-radius: 3px;
+  border-radius: 12.5px;
   transition: 0.2s;
 }
 .tags .tag:hover {

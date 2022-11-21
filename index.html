@@ -60,6 +60,30 @@
             50%{background-position:100% 15%}
             100%{background-position:0% 86%}
         }
+        @media screen and (max-width: 531px) {
+            .container { display: flex; flex-flow: column;}
+            .one { order: 1; }
+            .two { order: 2  }
+        }
+        .container body {
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        body {
+            display:flex;
+            min-height:100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        html {
+            /* display: table; */
+            margin: auto;
+        }
+
+
         /* used https://www.gradient-animator.com/ to generate the gradient animation */
     </style>
      <script>
@@ -92,9 +116,8 @@
     
 
   </head>
-<body class="css-selector" style="display:flex; align-items:center; justify-content:center">
-    <div>
-    <article class="card">
+<body class="css-selector container" >
+    <article class="card one">
         <div>
             <p class="sub-heading">
                 Letter
@@ -114,7 +137,7 @@
 
         </div>
     </article>      
-    <article class="card">
+    <article class="card two">
         <div>
             <p class="sub-heading">
                 Archives
@@ -132,6 +155,5 @@
             <a class="tag" href="valentines22/home.html" target="_blank">V-day '22</a>
         </div>
     </article>      
-    </div>
 </body>
 </html>
