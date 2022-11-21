@@ -64,7 +64,19 @@
     </style>
      <script>
         function Hint() {
-          alert ("The password format is: word.letterIndex");
+            var random = Math.floor(Math.random() * 5);
+
+            if (random == 0) {
+                alert("The password format is: numberWord.letterIndex");
+            } else if (random == 1) {
+                alert("abcdefg");
+            } else if (random == 2) {
+                alert("for crossword #6... its a general thing. not specific");
+            } else if (random == 3) {
+                alert("you can get max 2 hints by texting me");
+            } else {
+                alert("you can click this button multiple times for different hints");
+            }
         }
         // function login(){
         //     var password = document.getElementById("ilysmbaby").value;
@@ -98,7 +110,7 @@
         </div>
         <div class="tags">
             <a class="tag" href="images/happy20th/crossword.png" target="_blank">Crossword</a>
-            <a class="tag" onclick="Hint()">Format Hint</a>
+            <a class="tag" onclick="Hint()">Hints</a>
 
         </div>
     </article>      
