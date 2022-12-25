@@ -31,7 +31,23 @@ body {
 	transition: 0.2s;
 	margin: 30px;
 }
-
+.card-mini {
+	font-family: "PT Serif", serif;
+	min-width: 300px;
+	width: 300px;
+	height: 150px;
+	background: #17141d;
+	border-radius: 16px;
+	padding: 1rem 1.5rem;
+	box-shadow: -1rem 0 3rem #000;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.2s;
+	margin: 30px;
+	position: relative;
+}
 h2,
 a,
 p {
