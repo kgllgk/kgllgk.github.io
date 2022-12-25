@@ -127,7 +127,19 @@
             }
         }
 
+        // Get the input field
+        var input = document.getElementById("pwd");
 
+        // Execute a function when the user presses a key on the keyboard
+        input.addEventListener("keypress", function(event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action, if needed
+            // event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("mybutton").click();
+        }
+        });
     </script>
     
 
@@ -135,10 +147,11 @@
 <body class="css-selector container" >
     <article class="card one" style="align-items: center; justify-content: center; align-content: center;">
         
-    <form>
-        <input type="password" id="pwd" placeholder="Password" /><br><br>
-        <input type="button" value="Check Password" onclick="checkPassword()" />
-    </form>
+        <h2>goodmorning?</h2>
+        <form style="text-align: center;">
+            <input type="password" id="pwd" placeholder="password" /><br>
+            <button id="mybutton" onclick="checkPassword()">enter</button><br>
+        </form>
     </article>
 
 </body>

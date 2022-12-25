@@ -1,23 +1,9 @@
-.card {
-	position: relative;
-}
-.main-link::before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-// general styling
 body {
 	display: flex;
 }
 
 .card {
 	font-family: "PT Serif", serif;
-	min-width: 300px;
 	width: 300px;
 	height: 350px;
 	background: #17141d;
@@ -28,8 +14,25 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	cursor: pointer;
 	transition: 0.2s;
 	margin: 30px;
+
+	&:hover {
+		transform: translateY(-10px);
+
+		.main-link {
+			color: #ff8a00;
+		}
+	}
+
+	&:focus-within {
+		box-shadow: 0 0 0 0.25rem;
+	}
+
+	&:focus-within a:focus {
+		text-decoration: none;
+	}
 }
 
 h2,
