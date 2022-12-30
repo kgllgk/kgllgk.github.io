@@ -120,9 +120,11 @@
             var userPassword = document.getElementById("pwd").value;
             
             if (userPassword == password) {
+                window.location.replace("https://www.example.com");
+
                 alert("Correct password");
                 //redirect to the next page
-                window.location.replace("https://www.example.com");
+                // window.location.replace("https://www.example.com");
             } else {
                 alert("Incorrect password");
             }
