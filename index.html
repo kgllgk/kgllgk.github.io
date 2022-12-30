@@ -31,21 +31,6 @@
 
         card.addEventListener("click", handleClick);
 
-        // // checkpass script from gpt
-        // function checkPassword(password) {
-        //     // Prompt the user for a password
-        //     var userPassword = prompt("Please enter the password:");
-
-        //     // Check if the user's password matches the correct password
-        //     if (userPassword == password) {
-        //         // If the password is correct, redirect the user to the new site
-        //         window.location.href = "https://www.example.com";
-        //     } else {
-        //         // If the password is incorrect, display an error message
-        //         alert("Incorrect password");
-        //     }
-        // }
-
     </script>
     <style>
         * {
@@ -136,8 +121,6 @@
             var userPassword = document.getElementById("pwd");
             
             if (passwordKey == password) {
-                window.location.replace("https://www.example.com");
-                window.location.href = "https://www.example1.com";
                 window.location.assign("https://www.example2.com");
 
                 alert("Correct password");
@@ -147,20 +130,6 @@
                 alert("Incorrect password");
             }
         }
-
-        // Get the input field
-        var input = document.getElementById("pwd");
-
-        // Execute a function when the user presses a key on the keyboard
-        input.addEventListener("keypress", function(event) {
-        // If the user presses the "Enter" key on the keyboard
-        if (event.key === "Enter") {
-            // Cancel the default action, if needed
-            // event.preventDefault();
-            // Trigger the button element with a click
-            document.getElementById("mybutton").click();
-        }
-        });
     </script>
     
 
@@ -168,16 +137,11 @@
 <body class="css-selector container" >
     <article class="card one" style="align-items: center; justify-content: center; align-content: center;">
         
-        <h2>goodmorning4?</h2>
+        <h2>goodmorning?</h2>
         <form style="text-align: center;">
             <input type="password" id="pwd" placeholder="password" /><br>
             <button type="button" id="mybutton" onclick="checkPassword('kgl22.com')">enter</button><br>
         </form>
-        <!-- <form style="text-align: center;"">
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd"><br>
-            <button onclick="checkPassword('kgl22.com')">Enter</button>
-          </form> -->
         
     </article>
 
