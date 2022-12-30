@@ -130,6 +130,19 @@
                 alert("Incorrect password");
             }
         }
+            // Get the password input field
+    var input = document.getElementById("pwd");
+
+    // Add an event listener that listens for the "keypress" event
+    input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action of the event (prevent the page from reloading)
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("mybutton").click();
+        }
+    });
     </script>
     
 
