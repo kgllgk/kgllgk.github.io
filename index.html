@@ -130,10 +130,10 @@
                 alert("Incorrect password");
             }
         }
-        document.getElementById("pwdchkform").addEventListener("submit", function(e) {
-            search(document.getElementById("pwd"));
-            e.preventDefault();
-        }, false);
+        // document.getElementById("pwdchkform").addEventListener("submit", function(e) {
+        //     search(document.getElementById("pwd"));
+        //     e.preventDefault();
+        // }, false);
 
 
     </script>
@@ -144,7 +144,7 @@
     <article class="card one" style="align-items: center; justify-content: center; align-content: center;">
         
         <h2>goodmorning?</h2>
-        <form id="pwdchkform"style="text-align: center;">
+        <form onSubmit="return false;" style="text-align: center;">
             <input type="password" id="pwd" placeholder="password" /><br>
             <button type="button" id="mybutton" onclick="checkPassword('kgl22.com')">enter</button><br>
         </form>
