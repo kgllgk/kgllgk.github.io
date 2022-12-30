@@ -8,12 +8,17 @@
 
       // Check if the user's password matches the correct password
       if (userPassword == password) {
-        // If the password is correct, redirect the user to the new site
-        window.location.href = "https://www.example.com";
+        // If the password is correct, call the redirect function
+        redirect();
       } else {
         // If the password is incorrect, display an error message
         alert("Incorrect password");
       }
+    }
+
+    function redirect() {
+      // Redirect to the new site
+      window.location.href = "https://www.example.com";
     }
   </script>
 </head>
