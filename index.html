@@ -130,10 +130,10 @@
                 alert("Incorrect password");
             }
         }
-        document.querySelector("#pwdchkform").addEventListener("submit", function(event) {
-            search(document.querySelector("#pwd"));
-            event.preventDefault();
-        });
+        document.getElementById("pwdchkform").addEventListener("submit", function(e) {
+            search(document.getElementById("pwd"));
+            e.preventDefault();
+        }, false);
 
 
     </script>
