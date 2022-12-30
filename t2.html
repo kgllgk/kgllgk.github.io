@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function checkPassword(password) {
+      // Prompt the user for a password
+      var userPassword = prompt("Please enter the password:");
+
+      // Check if the user's password matches the correct password
+      if (userPassword == password) {
+        // If the password is correct, call the redirect function
+        redirect();
+      } else {
+        // If the password is incorrect, display an error message
+        alert("Incorrect password");
+      }
+    }
+
+    function redirect() {
+      // Redirect to the new site
+      window.location.href = "https://www.example.com";
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd"><br>
+    <button onclick="checkPassword('kgl22.com')">Enter</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>collection | 2kimmy.com</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?" />
+    <meta property="og:title" content="happy 20th birthday!" />
+    <meta property="og:image" content="https://kgl22.com/images/linkpreview.jpg" />
+
+    <link rel="stylesheet" href="build/scssstyl.css">
+
+    <script>
+        const card = document.querySelector(".card");
+        const mainLink = card.querySelector(".main-link");
+        const clickableElements = Array.from(card.querySelectorAll("a")); //we are using 'a' here for simplicity but ideally you should put a class like 'clickable' on every clicable element inside card(a, button) and use that in query selector
+
+        clickableElements.forEach((ele) =>
+            ele.addEventListener("click", (e) => e.stopPropagation())
+        );
+
+        function handleClick(event) {
+            const noTextSelected = !window.getSelection().toString();
+
+            if (noTextSelected) {
+                mainLink.click();
+            }
+        }
+
+        card.addEventListener("click", handleClick);
+    </script>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .css-selector {
+            background: linear-gradient(229deg, #314428, #264955);
+            background-size: 400% 400%;
+            -webkit-animation: anim 0s ease infinite;
+            -moz-animation: anim 0s ease infinite;
+            -o-animation: anim 0s ease infinite;
+            animation: anim 0s ease infinite;
+        }
+        @-webkit-keyframes anim {
+            0%{background-position:0% 86%}
+            50%{background-position:100% 15%}
+            100%{background-position:0% 86%}
+        }
+        @-moz-keyframes anim {
+            0%{background-position:0% 86%}
+            50%{background-position:100% 15%}
+            100%{background-position:0% 86%}
+        }
+        @-o-keyframes anim {
+            0%{background-position:0% 86%}
+            50%{background-position:100% 15%}
+            100%{background-position:0% 86%}
+        }
+        @keyframes anim {
+            0%{background-position:0% 86%}
+            50%{background-position:100% 15%}
+            100%{background-position:0% 86%}
+        }
+        @media screen and (max-width: 531px) {
+            .container { display: flex; flex-flow: column;}
+            .one { order: 1; }
+            .two { order: 2;  }
+            .three { order: 3; }
+            .four { order: 4;  }
+            .five { order: 5;  }
+            .six { order: 6  }
+
+        }
+        .container body {
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+        }
+
+        body {
+            display:flex;
+            min-height:100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        html {
+            display: table;
+            margin:auto;
+        }
+
+
+        /* used https://www.gradient-animator.com/ to generate the gradient animation */
+    </style>
+     <script>
+        function Hint() {
+            var random = Math.floor(Math.random() * 5);
+
+            if (random == 0) {
+                alert("The password format is: numberWord.letterIndex");
+            } else if (random == 1) {
+                alert("abcdefg");
+            } else if (random == 2) {
+                alert("for crossword #6... its a general thing. not specific");
+            } else if (random == 3) {
+                alert("you can get max 2 hints by texting me");
+            } else {
+                alert("you can click this button multiple times for different hints");
+            }
+        }
+        // function login(){
+        //     var password = document.getElementById("ilysmbaby").value;
+
+        //     if(password == "password"){
+        //         ONSUtils.LoadPage('letter20.png');
+        //     }else{
+        //         ONSUtils.LoadPage('index.html');
+        //     }
+        // }
+
+    </script>
+    
+
+  </head>
+<body class="css-selector container" >
+    <article class="card-mini">
+        <div>
+            <p class="sub-heading">
+                ⭠ 
+                <time datetime="2022-11-21">
+                    back to home </time>
+            </p>
+            <h2><a href="home.html" class="main-link" target="">go back</a></h2>
+            <p>
+                
+            </p>
+        </div>
+    </article>      
+    <article class="card one">
+        <div>
+            <p class="sub-heading">
+                3 years
+                <time datetime="2022-12-10">
+                    Unlocked July 20, 2022 </time>
+            </p>
+            <h2><a href="archive.html" class="main-link" target="_blank">Letter 1</a></h2>
+            <p>
+                Click here for the first letter of the 3 year anniversary collection
+            </p>
+        </div>
+    </article>    
+    <article class="card two">
+        <div>
+            <p class="sub-heading">
+                3 years
+                <time datetime="2022-12-10">
+                    Unlocked July 20, 2022 </time>
+            </p>
+            <h2><a href="archive.html" class="main-link" target="_blank">Letter 1</a></h2>
+            <p>
+                Click here for the first letter of the 3 year anniversary collection
+            </p>
+        </div>
+    </article>   
+    <article class="card three">
+        <div>
+            <p class="sub-heading">
+                3 years
+                <time datetime="2022-12-10">
+                    Unlocked July 20, 2022 </time>
+            </p>
+            <h2><a href="archive.html" class="main-link" target="_blank">Letter 1</a></h2>
+            <p>
+                Click here for the first letter of the 3 year anniversary collection
+            </p>
+        </div>
+    </article>   
+    <article class="card four">
+        <div>
+            <p class="sub-heading">
+                3 years
+                <time datetime="2022-12-10">
+                    Unlocked July 20, 2022 </time>
+            </p>
+            <h2><a href="archive.html" class="main-link" target="_blank">Letter 1</a></h2>
+            <p>
+                Click here for the first letter of the 3 year anniversary collection
+            </p>
+        </div>
+    </article>   
+    <article class="card five">
+        <div>
+            <p class="sub-heading">
+                3 years
+                <time datetime="2022-12-10">
+                    Unlocked July 20, 2022 </time>
+            </p>
+            <h2><a href="archive.html" class="main-link" target="_blank">Letter 1</a></h2>
+            <p>
+                Click here for the first letter of the 3 year anniversary collection
+            </p>
+        </div>
+    </article>   
+
+</body>
+</html>

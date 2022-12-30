@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>home | kgl22.com</title>
+    <title>enter password</title>
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico?" />
     <meta property="og:title" content="happy 20th birthday!" />
@@ -30,6 +30,7 @@
         }
 
         card.addEventListener("click", handleClick);
+
     </script>
     <style>
         * {
@@ -86,77 +87,66 @@
             margin: auto;
         }
 
+        input {
+            padding: 10px;
+            margin:10px 0;
+            border:0;
+            border-radius:10px;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+
 
         /* used https://www.gradient-animator.com/ to generate the gradient animation */
     </style>
      <script>
-        function Hint() {
-            var random = Math.floor(Math.random() * 5);
+        // function Hint() {
+        //     var random = Math.floor(Math.random() * 5);
 
-            if (random == 0) {
-                alert("The password format is: numberWord.letterIndex");
-            } else if (random == 1) {
-                alert("abcdefg");
-            } else if (random == 2) {
-                alert("for crossword #6... its a general thing. not specific");
-            } else if (random == 3) {
-                alert("you can get max 2 hints by texting me");
-            } else {
-                alert("you can click this button multiple times for different hints");
-            }
-        }
-        // function login(){
-        //     var password = document.getElementById("ilysmbaby").value;
-
-        //     if(password == "password"){
-        //         ONSUtils.LoadPage('letter20.png');
-        //     }else{
-        //         ONSUtils.LoadPage('index.html');
+        //     if (random == 0) {
+        //         alert("The password format is: numberWord.letterIndex");
+        //     } else if (random == 1) {
+        //         alert("abcdefg");
+        //     } else if (random == 2) {
+        //         alert("for crossword #6... its a general thing. not specific");
+        //     } else if (random == 3) {
+        //         alert("you can get max 2 hints by texting me");
+        //     } else {
+        //         alert("you can click this button multiple times for different hints");
         //     }
         // }
+        //  js function to check if password from user matches the password variable below
+        function checkPassword(password) {
+            var passwordKey = "kgl22.com";
+            var userPassword = document.getElementById("pwd");
+            
+            if (passwordKey == password) {
+                window.location.assign("/home");
+
+                alert("Correct password");
+                //redirect to the next page
+                // window.location.replace("https://www.example.com");
+            } else {
+                alert("Incorrect password");
+            }
+        }
+
+
 
     </script>
     
 
   </head>
 <body class="css-selector container" >
-    <article class="card one">
-        <div>
-            <p class="sub-heading">
-                Letter
-                <time datetime="2022-11-21">
-                    Nov 21, 2022 </time>
-            </p>
-            <h2><a href="password.html" class="main-link" target="_blank">Your Letter</a></h2>
-            <p>
-                Below is the link to access the crossword. 
-                The password key is 4.5, 2.4, 7.1, 2.3, 8.1, 4.4, 3.8, 4.4, 7.1
-                <br><br> 
-            </p>
-        </div>
-        <div class="tags">
-            <a class="tag" href="images/happy20th/crossword.png" target="_blank">Crossword</a>
-            <a class="tag" onclick="Hint()">Hints</a>
+    <article class="card one" style="align-items: center; justify-content: center; align-content: center;">
+        
+        <h2>goodmorning?</h2>
+        <form onSubmit="return false;" style="text-align: center;">
+            <input type="password" id="pwd" placeholder="password" /><br>
+            <button type="button" id="mybutton" onclick="checkPassword('kgl22.com')">enter</button><br>
+        </form>
+        
+    </article>
 
-        </div>
-    </article>      
-    <article class="card two">
-        <div>
-            <p class="sub-heading">
-                Archives
-                <time datetime="2022-11-21">
-                    Updated Nov 21, 2022 </time>
-            </p>
-            <h2><a href="3years/countdown.html" class="main-link" target="_blank">Past Links</a></h2>
-            <p>
-                Click here to access the 'Countdown' page, 
-                or find other archives using the links below
-            </p>
-        </div>
-        <div class="tags">
-            <a class="tag" href="3years/home.html" target="_blank">3 years</a>
-            <a class="tag" href="valentines22/home.html" target="_blank">V Day 22</a>
-        </div>
-    </article>      
 </body>
 </html>

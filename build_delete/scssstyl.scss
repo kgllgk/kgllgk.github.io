@@ -1,0 +1,88 @@
+body {
+	display: flex;
+}
+
+.card {
+	font-family: "PT Serif", serif;
+	width: 300px;
+	height: 350px;
+	background: #17141d;
+	border-radius: 16px;
+	padding: 1rem 1.5rem;
+	box-shadow: -1rem 0 3rem #000;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: 0.2s;
+	margin: 30px;
+
+	&:hover {
+		transform: translateY(-10px);
+
+		.main-link {
+			color: #ff8a00;
+		}
+	}
+
+	&:focus-within {
+		box-shadow: 0 0 0 0.25rem;
+	}
+
+	&:focus-within a:focus {
+		text-decoration: none;
+	}
+}
+
+h2,
+a,
+p {
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.2s;
+
+	&:hover,
+	&:focus {
+		color: #ff8a00;
+		outline: none;
+	}
+}
+
+time {
+	color: grey;
+}
+
+.author-name {
+	display: flex;
+	align-items: center;
+
+	img {
+		height: 36px;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+}
+
+.tags {
+	display: flex;
+	margin: 10px 0;
+
+	.tag {
+		padding: 5px 10px;
+		border: solid 1px grey;
+		border-radius: 3px;
+		transition: 0.2s;
+
+		&:hover {
+			background: gray;
+		}
+	}
+
+	.tag + .tag {
+		margin-left: 10px;
+	}
+}
