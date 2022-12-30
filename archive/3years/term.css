@@ -8,11 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-a {
-  color: inherit;
-  text-decoration: none !important;
-}
-
 body {
   background-color: #647a94;
   height: 100vh;
@@ -24,6 +19,7 @@ body {
   justify-content: space-around;
   height: 100%;
   margin: 50px;
+  padding: 50px;
 }
 
 .console {
