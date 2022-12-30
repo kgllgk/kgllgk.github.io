@@ -121,6 +121,8 @@
             
             if (userPassword == password) {
                 window.location.replace("https://www.example.com");
+                window.location.href = "https://www.example1.com";
+                window.location.assign("https://www.example2.com");
 
                 alert("Correct password");
                 //redirect to the next page
@@ -150,7 +152,7 @@
 <body class="css-selector container" >
     <article class="card one" style="align-items: center; justify-content: center; align-content: center;">
         
-        <h2>goodmorning21?</h2>
+        <h2>goodmorning2?</h2>
         <form style="text-align: center;">
             <input type="password" id="pwd" placeholder="password" /><br>
             <button id="mybutton" onclick="checkPassword()">enter</button><br>
