@@ -132,10 +132,10 @@
         // }
         //  js function to check if password from user matches the password variable below
         function checkPassword(password) {
-            var password = "kgl22.com";
-            var userPassword = document.getElementById("pwd").value;
+            var passwordKey = "kgl22.com";
+            var userPassword = document.getElementById("pwd");
             
-            if (userPassword == password) {
+            if (passwordKey == password) {
                 window.location.replace("https://www.example.com");
                 window.location.href = "https://www.example1.com";
                 window.location.assign("https://www.example2.com");
@@ -148,7 +148,7 @@
             }
         }
 
-        Get the input field
+        // Get the input field
         var input = document.getElementById("pwd");
 
         // Execute a function when the user presses a key on the keyboard
