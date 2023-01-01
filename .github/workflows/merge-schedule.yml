@@ -1,7 +1,5 @@
 name: Merge Schedule
-
-- name: Merge Schedule
-  uses: gr2m/merge-schedule-action@v2.4.0
+uses: gr2m/merge-schedule-action@v2.4.0
 
 on:
   pull_request:
